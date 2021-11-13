@@ -1,0 +1,39 @@
+@mixin getTrendingUsers {
+    .trending-Users {
+        @include getCardStyles;
+
+        .trendingInfo {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            @include cardIconStyles;
+
+            h4 {
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        .trend {
+            display: flex;
+            margin-bottom: 1.3rem;
+            gap: 1rem;
+
+            img {
+                border-radius: 2rem;
+                height: 2.5rem;
+            }
+
+            .trendInfo {
+                margin-left: 1.6rem;
+                
+                h4 {
+                    margin-bottom: 0.15rem;
+                }
+                
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

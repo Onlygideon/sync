@@ -1,0 +1,36 @@
+    @mixin navStyles{    
+    .navbar {
+        margin: 1rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            cursor: pointer;
+        }
+
+        nav {
+            img {
+                display: none;
+            }
+        }
+            
+
+        .info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            h4 {
+                cursor: pointer;
+            }
+
+            .profile-pic {
+                img {
+                    border-radius: 3rem;
+                    height: 3rem;
+                }
+            }
+        }
+    }
+}

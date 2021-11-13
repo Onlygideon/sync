@@ -1,0 +1,71 @@
+ @media (max-width: 1098px) {
+     body {
+         padding: 0 !important;
+
+         .panel {
+            grid-template-columns: 1fr;
+
+            .sidebar {
+                display: none;
+            }
+
+            .metrics {
+                height: max-content;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+
+                .navbar {
+                    margin: 0;
+                    margin-bottom: 1.5rem;
+                    background-color: rgb(59, 81, 116);
+                    padding: 1.5rem 1.5rem;
+
+                    h1 {
+                        display: none;
+                    }
+
+                    nav {
+                        img {
+                            display: flex;
+                            height: 4.5rem;
+                            cursor: pointer;
+                            margin-left: 1rem;
+                        }
+                    }
+
+                    .info {
+                        h4{
+                            color: rgb(189, 183, 183);
+                        }
+                    }
+                }
+
+                .grid-one,.grid-two {
+                    grid-template-columns: 1fr;
+                }
+            }
+         }
+     }
+ }
+
+
+ @media (max-width: 1100px) {
+    body {
+        .panel {
+            .metrics {
+                .grid-two {
+                    .trendingTracks {
+                        .trend {
+                            .trendMetas {
+                                gap: 2.5rem;
+                                span {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+ }

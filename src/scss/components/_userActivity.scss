@@ -1,0 +1,16 @@
+@mixin userActivityStyles {
+    .user-activity {
+        @include getCardStyles;
+
+        .activityInfo {
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            @include cardIconStyles;
+
+            h4 {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+}

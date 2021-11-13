@@ -1,0 +1,42 @@
+.player {
+    background-color: rgba(#000000, 0.2);
+    padding: 3rem 3rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+
+    &-image {
+        position: relative;
+        img {
+            position: absolute;
+            height: 3rem;
+            bottom: 1rem;
+            right: -1.5rem;
+        }
+    }
+
+    .trackArtiste {
+        margin-bottom: 0.8rem;
+        margin-top: 0.2rem;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .seekInfo {
+        margin-top: 0.1rem;
+        display: flex;
+        justify-content: space-between;
+
+        span{
+            font-size: 10px;
+        }
+    }
+
+    .player-options {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

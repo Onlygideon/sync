@@ -1,0 +1,17 @@
+@mixin monthlyFollowersStyles {
+    .followers-metric {
+        background-color: #fff;
+        @include getCardStyles;
+
+        .followersMetric-info {
+            display: flex;
+            justify-content: space-between;
+            @include cardIconStyles;
+
+            h4 {
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    
+}
