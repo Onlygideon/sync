@@ -572,7 +572,23 @@ body .panel {
     padding-bottom: 2rem;
   }
   body .panel .metrics .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .panel .metrics .navbar h1 {
     display: none;
+  }
+  body .panel .metrics .navbar .info {
+    position: absolute;
+    right: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  body .panel .metrics .navbar .info h4 {
+    font-size: 14px;
+  }
+  body .panel .metrics .navbar .info .profile-pic img {
+    height: 2.5rem;
   }
   body .panel .metrics .grid-one, body .panel .metrics .grid-two {
     -ms-grid-columns: 1fr;
@@ -604,6 +620,25 @@ body .panel {
 @media (max-width: 698px) {
   body .panel .sidebar .top-container .logo {
     height: 3.5rem;
+  }
+  body .panel .metrics .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .panel .metrics .navbar h1 {
+    display: none;
+  }
+  body .panel .metrics .navbar .info {
+    position: absolute;
+    right: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+  body .panel .metrics .navbar .info h4 {
+    font-size: 12px;
+  }
+  body .panel .metrics .navbar .info .profile-pic img {
+    height: 2rem;
   }
   body .panel .metrics .grid-one .top-box h4 {
     font-size: 13px;

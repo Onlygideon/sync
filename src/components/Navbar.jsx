@@ -1,5 +1,5 @@
 import Pic from "../assets/profile-pic.webp"
-import Logo from "../assets/logo2.png"
+
 
 
 
