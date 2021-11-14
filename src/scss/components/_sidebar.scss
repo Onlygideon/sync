@@ -1,9 +1,5 @@
 .sidebar {
-    background-image: radial-gradient(
-        circle 580.6px at 10% 40%,
-        rgb(59, 81, 116) 30%,
-          rgb(0,0,0) 100%  
-    );
+    background-color: rgb(59, 81, 116);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

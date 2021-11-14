@@ -54,8 +54,8 @@ const UserActivity = () => {
         <div className="user-activity">
             <div className="activityInfo">
                 <div>
-                    <h4>Recent Activity</h4>
-                    <span>Today</span>
+                    <h4>Recent Activities</h4>
+                    <span>Last Week</span>
                 </div>
 
                 <div className="icon">

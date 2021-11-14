@@ -80,7 +80,7 @@ body .panel {
 }
 
 .sidebar {
-  background-image: radial-gradient(circle 580.6px at 10% 40%, #3b5174 30%, black 100%);
+  background-color: #3b5174;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,10 +158,6 @@ body .panel {
 
 .metrics .navbar h1 {
   cursor: pointer;
-}
-
-.metrics .navbar nav img {
-  display: none;
 }
 
 .metrics .navbar .info {
@@ -265,6 +261,18 @@ body .panel {
   font-size: 1.4rem;
 }
 
+@media (max-width: 898px) {
+  .metrics .grid-one .followers-metric .followersMetric-info .icon svg {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .metrics .grid-one .followers-metric .followersMetric-info .icon svg {
+    font-size: 0.7rem;
+  }
+}
+
 .metrics .grid-one .followers-metric .followersMetric-info h4 {
   margin-bottom: 0.5rem;
 }
@@ -328,6 +336,18 @@ body .panel {
   font-size: 1.4rem;
 }
 
+@media (max-width: 898px) {
+  .metrics .grid-two .trendingTracks .tracksInfo .icon svg {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .metrics .grid-two .trendingTracks .tracksInfo .icon svg {
+    font-size: 0.7rem;
+  }
+}
+
 .metrics .grid-two .trendingTracks .tracksInfo h4 {
   margin-bottom: 0.5rem;
 }
@@ -341,6 +361,15 @@ body .panel {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 280px) {
+  .metrics .grid-two .trendingTracks .trend {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .metrics .grid-two .trendingTracks .trend .trendInfo {
@@ -412,6 +441,18 @@ body .panel {
 .metrics .grid-two .trending-Users .trendingInfo .icon svg {
   color: #4361ee;
   font-size: 1.4rem;
+}
+
+@media (max-width: 898px) {
+  .metrics .grid-two .trending-Users .trendingInfo .icon svg {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .metrics .grid-two .trending-Users .trendingInfo .icon svg {
+    font-size: 0.7rem;
+  }
 }
 
 .metrics .grid-two .trending-Users .trendingInfo h4 {
@@ -490,6 +531,18 @@ body .panel {
   font-size: 1.4rem;
 }
 
+@media (max-width: 898px) {
+  .metrics .grid-two .user-activity .activityInfo .icon svg {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .metrics .grid-two .user-activity .activityInfo .icon svg {
+    font-size: 0.7rem;
+  }
+}
+
 .metrics .grid-two .user-activity .activityInfo h4 {
   margin-bottom: 0.5rem;
 }
@@ -502,7 +555,13 @@ body .panel {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  body .panel .sidebar {
+  body .panel .sidebar .top-container .logo {
+    height: 5rem;
+  }
+  body .panel .sidebar .top-container .links {
+    display: none;
+  }
+  body .panel .sidebar .bottom-container {
     display: none;
   }
   body .panel .metrics {
@@ -513,24 +572,7 @@ body .panel {
     padding-bottom: 2rem;
   }
   body .panel .metrics .navbar {
-    margin: 0;
-    margin-bottom: 1.5rem;
-    background-color: #3b5174;
-    padding: 1.5rem 1.5rem;
-  }
-  body .panel .metrics .navbar h1 {
     display: none;
-  }
-  body .panel .metrics .navbar nav img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 4.5rem;
-    cursor: pointer;
-    margin-left: 1rem;
-  }
-  body .panel .metrics .navbar .info h4 {
-    color: #bdb7b7;
   }
   body .panel .metrics .grid-one, body .panel .metrics .grid-two {
     -ms-grid-columns: 1fr;
@@ -539,10 +581,82 @@ body .panel {
 }
 
 @media (max-width: 1100px) {
+  body .panel .metrics .grid-two .trendingTracks .tracksInfo h4 {
+    font-size: 15px;
+  }
+  body .panel .metrics .grid-two .trendingTracks .tracksInfo span {
+    font-size: 13px;
+  }
+  body .panel .metrics .grid-two .trendingTracks .trend .trendInfo h4 {
+    font-size: 13px;
+  }
+  body .panel .metrics .grid-two .trendingTracks .trend .trendInfo span {
+    font-size: 12px;
+  }
   body .panel .metrics .grid-two .trendingTracks .trend .trendMetas {
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
   body .panel .metrics .grid-two .trendingTracks .trend .trendMetas span {
-    font-size: 15px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 698px) {
+  body .panel .sidebar .top-container .logo {
+    height: 3.5rem;
+  }
+  body .panel .metrics .grid-one .top-box h4 {
+    font-size: 13px;
+  }
+  body .panel .metrics .grid-one .top-box span {
+    font-size: 11px;
+  }
+  body .panel .metrics .grid-one .followers-metric .followersMetric-info h4 {
+    font-size: 13px;
+  }
+  body .panel .metrics .grid-one .followers-metric .followersMetric-info span {
+    font-size: 11px;
+  }
+  body .panel .metrics .grid-two .trendingTracks .tracksInfo h4 {
+    font-size: 12px;
+  }
+  body .panel .metrics .grid-two .trendingTracks .tracksInfo span {
+    font-size: 11px;
+  }
+  body .panel .metrics .grid-two .trendingTracks .trend .trendInfo img {
+    height: 1.3rem;
+  }
+  body .panel .metrics .grid-two .trendingTracks .trend .trendInfo h4 {
+    font-size: 10px;
+  }
+  body .panel .metrics .grid-two .trendingTracks .trend .trendInfo span {
+    font-size: 8px;
+  }
+  body .panel .metrics .grid-two .trendingTracks .trend .trendMetas {
+    gap: 0.5rem;
+  }
+  body .panel .metrics .grid-two .trendingTracks .trend .trendMetas span {
+    font-size: 7px;
+  }
+  body .panel .metrics .grid-two .trending-Users .trendingInfo h4 {
+    font-size: 14px;
+  }
+  body .panel .metrics .grid-two .trending-Users .trendingInfo span {
+    font-size: 14px;
+  }
+  body .panel .metrics .grid-two .trending-Users .trend img {
+    height: 2rem;
+  }
+  body .panel .metrics .grid-two .trending-Users .trend .trendInfo h4 {
+    font-size: 12px;
+  }
+  body .panel .metrics .grid-two .trending-Users .trend .trendInfo span {
+    font-size: 12px;
+  }
+  body .panel .metrics .grid-two .user-activity .activityInfo h4 {
+    font-size: 14px;
+  }
+  body .panel .metrics .grid-two .user-activity .activityInfo span {
+    font-size: 14px;
   }
 }
